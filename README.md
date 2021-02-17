@@ -8,7 +8,7 @@ My program will be used to visualize different healthcare issues by state by cre
 Not sure yet. I want to create a tool that helps visualize data
 
 ### Description of the data
-I think I would like to use some sort of healthcare data. I think folium would be cool, but perhaps just a bar graph tool
+I think I would like to use some sort of healthcare data. I think 'folium' would be cool, but perhaps just a bar graph tool
 
 ### Description of user interaction
 Ideally, the user could specify a state and the program would plot the percentage of healthcare issues for that state.
