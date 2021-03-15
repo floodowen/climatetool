@@ -21,7 +21,7 @@ def root():
 
 # create another endpoint for returning iris data
 @app.get("/climatedata")
-def iris(category=seaice):
+def climatedata(category='seaice'):
     """
     returns climate data in JSON with option to subselect a category
     """
