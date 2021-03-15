@@ -16,6 +16,8 @@ To download and run the program, users should follow these directions:
 
 conda install pandas as pd numpy as np matplotlib meteostat geopandas folium scikit-learn -c conda-forge ...
 
-git clone 
+```
+git clone https://github.com/floodowen/climatetool.git
 cd ./climatetool
-pip install -e 
+pip install -e .
+```
