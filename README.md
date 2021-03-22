@@ -20,7 +20,7 @@ For now:
 git clone https://github.com/floodowen/climatetool.git
 cd ./climatetool
 pip install -e .
-type in climatetool
+type in climatetool, hit enter
 ```
 
 Later:
