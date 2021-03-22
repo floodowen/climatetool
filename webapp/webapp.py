@@ -35,3 +35,4 @@ def climatedata(category='seaice'):
     sdata = data.to_json(orient="index")
     jdata = json.loads(sdata)
     return jdata
+    
