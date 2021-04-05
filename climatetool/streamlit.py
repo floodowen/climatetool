@@ -24,32 +24,22 @@ fig = go.Figure()
 if selected_metrics == 'Global Temperature over time':
     fig.add_trace(go.Scatter(x=df.Year_temp, y=df.Temp,
                     mode='lines',
-                    name='Global Temperature over time',
-                    x_axis_label= 'Year',
-                    y_axis_label= 'Global land Temperature (Farenheit)'))
+                    name='Global Temperature over time'))
 if selected_metrics == 'Sea Ice Extent':
     fig.add_trace(go.Scatter(x=df.Date_ice, y=df.Extent,
                     mode='markers', 
-                    name='Sea Ice Extent',   
-                    x_axis_label= 'Date',
-                    y_axis_label= 'Sea Ice Extent (10^6 sq km)'))
+                    name='Sea Ice Extent'))
 if selected_metrics == 'Australia CO2 Emissions':
     fig.add_trace(go.Scatter(x=df.Australia_year, y=df.GHG_Aus,
                     mode='markers', 
-                    name='Australia CO2 Emissions',
-                    x_axis_label= 'Date',
-                    y_axis_label= 'Carbon Dioxide Emissions (kilotonne CO2'))
+                    name='Australia CO2 Emissions'))
 if selected_metrics == 'European Union CO2 Emissions':
     fig.add_trace(go.Scatter(x=df.EU_year, y=df.GHG_EU,
                     mode='markers', 
-                    name='European Union CO2 Emissions',
-                    x_axis_label= 'Date',
-                    y_axis_label= 'Carbon Dioxide Emissions (kilotonne CO2'))
+                    name='European Union CO2 Emissions'))
 if selected_metrics == 'USA CO2 Emissions':
     fig.add_trace(go.Scatter(x=df.US_year, y=df.GHG_US,
                     mode='markers', 
-                    name='USA CO2 Emissions', 
-                    x_axis_label= 'Date',
-                    y_axis_label= 'Carbon Dioxide Emissions (kilotonne CO2'))
+                    name='USA CO2 Emissions'))
 
 st.plotly_chart(fig, use_container_width=True)
