@@ -20,7 +20,8 @@ For now:
 git clone https://github.com/floodowen/climatetool.git
 cd ./climatetool
 pip install -e .
-type in climatetool, hit enter
+cd ./climatetool
+streamlit run streamlit.py
 ```
 
 Later:
