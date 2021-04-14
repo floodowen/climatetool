@@ -17,6 +17,7 @@ To download and run the program, users should follow these directions:
 For now:
 
 ```
+install pandas and streamlit
 git clone https://github.com/floodowen/climatetool.git
 cd ./climatetool
 pip install -e .
