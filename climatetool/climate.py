@@ -103,7 +103,7 @@ if selected_metrics == 'Carbon Dioxide Emissions':
                     mode='markers+lines',
                     name='Cyprus CO2 Emissions'))
     czech=st.checkbox("Czech Republic")
-    if cyprus:
+    if czech:
         fig.add_trace(go.Scatter(x=df.Czech_year, y=df.CO2_Czech,
                     mode='markers+lines',
                     name='Czech Republic CO2 Emissions'))
@@ -128,7 +128,7 @@ if selected_metrics == 'Carbon Dioxide Emissions':
                     mode='markers+lines',
                     name='France CO2 Emissions'))
     germany=st.checkbox("Germany")
-    if france:
+    if germany:
         fig.add_trace(go.Scatter(x=df.Germany_year, y=df.CO2_Germany,
                     mode='markers+lines',
                     name='Germany CO2 Emissions'))
