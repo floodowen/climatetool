@@ -27,6 +27,9 @@ if selected_metrics == 'Global Temperature Change':
     fig.add_trace(go.Scatter(x=df.Year_temp, y=df.Temp,
                     mode='lines',
                     name='Global Temperature over time'))
+    fig.add_trace(go.Scatter(x=df.Year_temp, y=df.trend,
+                    mode='lines',
+                    name='trendline'))
     fig.update_xaxes(
         title_text = 'Year',
     )
