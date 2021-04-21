@@ -34,17 +34,22 @@ if selected_metrics == 'Global Temperature Change':
         title_text = "Degrees Farenheit"
     )
 if selected_metrics == 'Sea Ice Extent':
-    north=st.checkbox("Northern Hemisphere")
+    north=st.checkbox("Northern Hemisphere Daily 1978-2019")
     if north:
         fig.add_trace(go.Scatter(x=df.Date_ice_N, y=df.Extent_N,
                     mode='markers',
-                    name='Sea Ice Extent'))
+                    name='Sea Ice Extent North'))
 
-    south=st.checkbox("Southern Hemisphere")
+    south=st.checkbox("Southern Hemisphere Daily 1978-2019")
     if south:
         fig.add_trace(go.Scatter(x=df.Date_ice_S, y=df.Extent_S,
                     mode='markers',
-                    name='Sea Ice Extent'))
+                    name='Sea Ice Extent South'))
+    low=st.checkbox("Northern Hemisphere Yearly Low 1979-2018")
+    if low:
+        fig.add_trace(go.Scatter(x=df.Date_ice_N_low, y=df.Extent_N_low,
+                    mode='lines',
+                    name='Sea Ice Extent low'))
     fig.update_xaxes(
         title_text = 'Date',
     )
