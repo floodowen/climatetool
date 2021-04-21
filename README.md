@@ -14,7 +14,7 @@ git clone https://github.com/floodowen/climatetool.git
 cd ./climatetool
 pip install -e .
 cd ./climatetool
-streamlit run streamlit.py
+streamlit run climate.py
 ```
 
 Once the user runs the program using streamlit from the command line, they will be able to use the local webpage to view variables.
