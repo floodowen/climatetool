@@ -9,11 +9,7 @@ This program will put multiple data sets into one easy to use format. Currently 
 To download and run the program, users should follow these directions:
 
 ```
-<<<<<<< HEAD
-install 
-=======
 install pandas and streamlit
->>>>>>> 069f27d077918a7833aac7373e86102217b096b6
 git clone https://github.com/floodowen/climatetool.git
 cd ./climatetool
 pip install -e .
